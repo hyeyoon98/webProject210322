@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+/*defalut 초기화*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { 
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+	font-size: 100%; 
+	font: inherit; 
+	vertical-align: baseline; 
+} 
+	/* HTML5 display-role reset for older browsers */ 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+	display: block; 
+} 
+
+body { 
+	line-height: 1; 
+} 
+
+ol, ul { 
+	list-style: none; 
+} 
+
+blockquote, q { 
+	quotes: none; 
+	} 
+
+blockquote:before, blockquote:after, q:before, q:after { 
+	content: ''; 
+	content: none; 
+} 
+
+table { 
+	border-collapse: collapse; border-spacing: 0; 
+}
+
+/*style*/
+body {
+	background-color: white;
+	max-width: 1130px;
+	margin: 0 auto;
+}
+
+p {
+	padding: 10px;
+	line-height: 1.6;
+}
+
+#wrapper {
+	margin: 0 auto;
+	max-width: 1130px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/*circle article*/
+.img-article {
+	position: relative;
+	background-image: url("../images/black/black1.jpg");
+	background-size:100% 100%;
+	width: 100%;
+	height: 400px;
+}
+
+.img-article .circle {
+	top: 0;
+	right: 0;
+	position: absolute;
+	line-height: 22px;
+	font-size: 14px;
+	background-color: #eb8282;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	text-align: center;
+	margin-right: 5%;
+	margin-top: -10%;
+}
+
+.img-article .circle .circle-title {
+	padding-top: 20%;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.heading {
+	font-size: 60px;
+	text-align: center;
+	color: black;
+	background-color: #a6a6a6;
+	padding: 30px 10px 30px 10px;
+	margin-top: 30px;
+	margin-bottom : 30px;
+}
+
+/* flex */
+.horizontal {
+	display: flex;
+}
+
+.horizontal .horizontal-img {
+	width: 50%;
+	background-image: url('../images/black/black2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.horizontal .horizontal-content {
+	width: 50%;
+}
+
+.article1 {
+	display: block;
+	font-size: 16px;
+	color: white;
+	background-color: #c4bfbf;
+	padding: 10px;
+	margin-right: 20%;
+	margin-bottom: 30px;
+}
+
+
+.article2 {
+	display: block;
+	font-size: 16px;
+	font-style: italic;
+	color: black;
+	padding: 10px;
+}
+
+.h1 {
+	background-color: black;
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+	padding: 10px;
+	margin-right: 10px;
+}
+
+.background {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: black;
+	width: 60%;
+	height: 650px;
+	z-index: -1;
+}
+
+@media (min-width: 480px) {
+	.heading 
+	{ 
+		font-size: 56px; 
+	}
+}
+
+@media (min-width: 768px) {
+	.heading { font-size: 58px; 
+	}
+}
+
+@media (min-width: 1024px) {
+	.heading { font-size: 60px; 
+	}
+}

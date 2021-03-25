@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+/*defalut 초기화*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { 
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+	font-size: 100%; 
+	font: inherit; 
+	vertical-align: baseline;
+} 
+	/* HTML5 display-role reset for older browsers */ 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+	display: block; 
+} 
+
+body { 
+	line-height: 1; 
+} 
+
+ol, ul { 
+	list-style: none; 
+} 
+
+blockquote, q { 
+	quotes: none; 
+	} 
+
+blockquote:before, blockquote:after, q:before, q:after { 
+	content: ''; 
+	content: none; 
+} 
+
+table { 
+	border-collapse: collapse; border-spacing: 0; 
+}
+
+/*style*/
+html {
+	background-color: #fcc7b7;
+}
+body {
+	/*width: 1130px;*/
+	margin: 0 auto;
+	/*background-color: white;*/
+}
+#wrapper {
+	max-width: 1130px;
+	margin: 0 auto;
+	/*padding: 20px;*/
+	margin-top: 70px;
+	margin-bottom: 70px;
+	background-color: white;
+}
+#wrapper .wrapper-container {
+	position: relative;
+	padding: 20px;
+}
+#header, #container{
+	position: relative;
+}
+
+
+.article1 p {
+	/*padding: 10px;*/
+	line-height: 1.6;
+}
+
+.circle-content {
+	font-size: 20px;
+	font-weight: bold;
+	color: #ff9475;
+}
+
+.img1 {
+	margin-left: 35%;
+	width: 65%;
+	margin-bottom: 30px;
+}
+
+.heading {
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	color: black;
+	background-color: #ff9475;
+	padding: 30px 10px 30px 10px;
+	/*margin-top: 50px;*/
+	margin-bottom : 30px;
+}
+
+.horizontal {
+	display: flex;
+}
+
+.item1 {
+	width: 70%;
+	height: 320px;
+	background-image: url('../images/woody/woody2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item2 {
+	width: 30%;
+}
+.img2 {
+	/*flex-grow: 1;*/
+/*	width: 70%;
+	height: 200px;*/
+}
+
+.article1 {
+	display: block;
+	background-color: white;
+	padding: 10px;
+	margin-bottom: 30px;
+	font-size: 16px;
+	color: black;
+}
+
+.article2 {
+	height: 300px;
+	display: : block;
+	vertical-align: middle;
+	background-color: #ffc260;
+	font-size: 18px;
+	font-style: italic;
+	color: white;
+	padding: 10px;
+} 
+
+.background {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #f1eac3;
+	width: 60%;
+	height: 1080px;
+}
+
+#footer {
+	/*margin-bottom: 50px;*/
+}
+
+@media (min-width: 480px) {
+	.heading 
+	{ 
+		font-size: 46px; 
+	}
+}
+
+@media (min-width: 768px) {
+	.heading { font-size: 48px; 
+	}
+}
+
+@media (min-width: 1024px) {
+	.heading { font-size: 50px; 
+	}
+}
